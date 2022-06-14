@@ -1,0 +1,20 @@
+.main-footer {
+  background-color: var(--main-icon-color);
+  padding: 15px 0;
+  h3 {
+    color: #fab32f;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  p,
+  a {
+    color: #fff;
+  }
+}
+
+.center-text {
+  text-align: center;
+  max-width: 400px;
+}

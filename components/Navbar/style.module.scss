@@ -1,0 +1,127 @@
+@keyframes dropdonwnAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+  }
+}
+
+.top-navbar {
+  padding: 5px 0;
+  // border-bottom: 1px solid red;
+  box-shadow: 0 0 1px 1px #ccc;
+  align-items: center;
+  ul {
+    display: flex;
+    li {
+      padding: 10px 0;
+      margin-left: 1.5rem;
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.input-search {
+  width: auto !important;
+}
+
+.bottom-navbar {
+  align-items: center;
+  box-shadow: 0 0 1px 1px #ccc;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+
+  .cosmetic:hover .cosmetic-dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+  .cosmetic-dropdown {
+    width: 68%;
+    left: 16%;
+    .cosmetic-dropdown-header {
+      > ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        li {
+          cursor: pointer;
+          padding: 10px 0 10px 10px;
+          flex: 1;
+        }
+      }
+      box-shadow: 0 0px 1px 1px #ccc;
+    }
+    .cosmetic-dropdown-body {
+      display: flex;
+      align-items: flex-start;
+      > ul {
+        padding-left: 10px;
+        flex: 1;
+        > li {
+          cursor: pointer;
+          padding: 3px 0;
+          color: var(--main-icon-color);
+        }
+        > li:hover {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    top: 80%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px #ccc;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+}
+
+.main-navigation {
+  > ul {
+    display: flex;
+    align-items: center;
+    > li {
+      padding: 15px;
+      span {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .introduction:hover .introduction-dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
+  .introduction-dropdown {
+    width: 250px;
+    > li {
+      padding: 5px 5px 5px 12px;
+      a {
+        color: var(--main-icon-color);
+      }
+      a:hover {
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  width: 50%;
+  min-width: 500px;
+  margin: 30px 0;
+  .main-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .box {
+    border-radius: 10px;
+    background-color: #ccc;
+    padding: 20px 10px 10px;
+  }
+  .sub-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 15px 0;
+  }
+  img {
+    margin: 15px auto;
+  }
+  .blue-box {
+    margin: 10px 0;
+    border: 1px dashed red;
+    padding: 10px;
+    background-color: rgb(192, 224, 238);
+  }
+  .step {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-style: italic;
+  }
+}
