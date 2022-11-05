@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
 import {
   Flex,
   Spacer,
   InputGroup,
   Input,
   InputRightAddon,
-} from "@chakra-ui/react";
-import styles from "./style.module.scss";
+} from '@chakra-ui/react';
+import styles from './style.module.scss';
 import {
   IoLocationSharp,
   IoMail,
   IoCall,
   IoSearch,
   IoChevronDown,
-} from "react-icons/io5";
-import { Icon } from "@chakra-ui/react";
-import Link from "next/link";
-import Image from "next/image";
+} from 'react-icons/io5';
+import { Icon } from '@chakra-ui/react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
     <>
-      <Flex className={styles["top-navbar"]}>
+      <Flex className={styles['top-navbar']}>
         <Spacer />
         <ul>
           <li>
@@ -29,27 +29,27 @@ export default function Navbar() {
               as={IoCall}
               style={{
                 fontSize: 24,
-                color: "var(--main-icon-color)",
+                color: 'var(--main-icon-color)',
               }}
             />
-            <span>1234567890</span>
+            <span>0868.610.203</span>
           </li>
           <li>
             <Icon
               as={IoMail}
               style={{
                 fontSize: 24,
-                color: "var(--main-icon-color)",
+                color: 'var(--main-icon-color)',
               }}
             />
-            <span>test@gmail.com</span>
+            <span>pasteurdental@gmail.com</span>
           </li>
           <li>
             <Icon
               as={IoLocationSharp}
               style={{
                 fontSize: 24,
-                color: "var(--main-icon-color)",
+                color: 'var(--main-icon-color)',
               }}
             />
             <span>Thanh Xuân</span>
@@ -59,49 +59,53 @@ export default function Navbar() {
               as={IoLocationSharp}
               style={{
                 fontSize: 24,
-                color: "var(--main-icon-color)",
+                color: 'var(--main-icon-color)',
               }}
             />
             <span>Hà Nội</span>
           </li>
         </ul>
         <Spacer />
-        <InputGroup className={styles["input-search"]}>
+        <InputGroup className={styles['input-search']}>
           <Input />
           <InputRightAddon children={<Icon as={IoSearch} />} />
         </InputGroup>
         <Spacer />
       </Flex>
-      <Flex className={styles["bottom-navbar"]}>
+      <Flex className={styles['bottom-navbar']}>
         <Spacer />
         <div className="main-logo">
           <Link href="/">
             <img
               style={{
-                cursor: "pointer",
+                cursor: 'pointer',
+                width: 140,
+                aspectRatio: 512 / 181,
               }}
-              src="https://nhakhoavietuc.com/wp-content/uploads/2018/11/LOGO-NhakhoaVietUc.png"
+              src={'/logo.png'}
               layout="fill"
             />
           </Link>
         </div>
         <Spacer />
-        <div className={styles["main-navigation"]}>
+        <div className={styles['main-navigation']}>
           <ul>
             <li>
               <Link href="/">Trang chủ</Link>
             </li>
-            <li className={styles["introduction"]}>
+            <li className={styles['introduction']}>
               <Link href="/">
                 <span>
                   Giới thiệu <Icon as={IoChevronDown} />
                 </span>
               </Link>
               <ul
-                className={`${styles["introduction-dropdown"]} ${styles["dropdown"]}`}
+                className={`${styles['introduction-dropdown']} ${styles['dropdown']}`}
               >
                 <li>
-                  <Link href="/gioi-thieu-ve-nha-khoa">Giới thiệu về nha khoa Pastuer</Link>
+                  <Link href="/gioi-thieu-ve-nha-khoa">
+                    Giới thiệu về nha khoa Pastuer
+                  </Link>
                 </li>
                 <li>
                   <Link href="/co-so-vat-chat">Cơ sở vật chất</Link>
@@ -111,16 +115,16 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-            <li className={styles["cosmetic"]}>
+            <li className={styles['cosmetic']}>
               <Link href="/">
                 <span>
                   Nha khoa thẩm mĩ <Icon as={IoChevronDown} />
                 </span>
               </Link>
               <div
-                className={`${styles["cosmetic-dropdown"]} ${styles["dropdown"]}`}
+                className={`${styles['cosmetic-dropdown']} ${styles['dropdown']}`}
               >
-                <div className={styles["cosmetic-dropdown-header"]}>
+                <div className={styles['cosmetic-dropdown-header']}>
                   <ul>
                     <li>Thẩm mỹ nụ cười</li>
                     <li>Chỉnh nha - Niềng răng</li>
@@ -128,7 +132,7 @@ export default function Navbar() {
                     <li>Tẩy trăng răng</li>
                   </ul>
                 </div>
-                <div className={styles["cosmetic-dropdown-body"]}>
+                <div className={styles['cosmetic-dropdown-body']}>
                   <ul>
                     <li>
                       <Link href="/boc-rang-su">Bọc răng sứ</Link>
@@ -164,23 +168,23 @@ export default function Navbar() {
                 </div>
               </div>
             </li>
-            <li className={styles["cosmetic"]}>
+            <li className={styles['cosmetic']}>
               <Link href="/">
                 <span>
                   Dịch vụ <Icon as={IoChevronDown} />
                 </span>
               </Link>
               <div
-                className={`${styles["cosmetic-dropdown"]} ${styles["dropdown"]}`}
+                className={`${styles['cosmetic-dropdown']} ${styles['dropdown']}`}
               >
-                <div className={styles["cosmetic-dropdown-header"]}>
+                <div className={styles['cosmetic-dropdown-header']}>
                   <ul>
                     <li>Giải pháp cho mất răng</li>
                     <li>Bệnh răng miệng</li>
                     <li>Nha khoa cho trẻ em</li>
                   </ul>
                 </div>
-                <div className={styles["cosmetic-dropdown-body"]}>
+                <div className={styles['cosmetic-dropdown-body']}>
                   <ul>
                     <li>Trồng răng Implant</li>
                     <li>Tư vấn công nghệ All on 4, All on 6</li>
